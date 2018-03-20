@@ -38,7 +38,7 @@ def hotel(f_name):
         for s in soup.find_all('div', {'class': ' col-md-6 col-xs-7 nopadding'}):
             # print s.h4.text
             # print s.p.text
-            l_hotel.append(s.h4.text +s.p.text)
+            l_hotel.append(s.h4.text)
         print l_hotel
     except:
             return "Enter city name"
